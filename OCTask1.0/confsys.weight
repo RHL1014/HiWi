@@ -1,0 +1,55 @@
+<random>
+	seed = 1
+</random>
+
+<action::integer>
+    number of actions = 67
+</action::integer>
+
+<condition::real_interval>
+       input size = 6
+        min input = 1
+        max input = 15
+               r0 = 0.1
+               m0 = 0.1
+  mutation method = fixed
+ crossover method = onepoint
+</condition::real_interval>
+
+
+<environment::weight>
+        input dim = 6
+        weight dim = 3
+        step = 0.1
+        number of actions = 67
+</environment::weight>
+
+<classifier_system>
+      population size = 400
+        learning rate = 0.2
+      discount factor = 0.7
+    covering strategy = standard 0
+  discovery component = on
+             theta GA = 25
+crossover probability = 0.8
+ mutation probability = 0.04
+         epsilon zero = 10
+                   vi = 5
+                alpha = 0.1
+      prediction init = 10.0
+           error init = 0.0
+         fitness init = 0.01
+        set size init = 1
+      population init = empty
+ exploration strategy = SEMIUNIFORM:1.0
+    deletion strategy = ACCURACY-BASED
+         theta delete = 20
+         theta GA sub = 20
+         theta AS sub = 100
+       GA subsumption = on
+       AS subsumption = on
+   update error first = on
+              use MAM = on
+GA tournament selection = off
+      tournament size = 0.4
+</classifier_system>
